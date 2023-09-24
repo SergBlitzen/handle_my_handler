@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <main>
+      <div class="main-box">
+        <header>
+          <h1 class="center-header">{{ handler.greeting }}</h1>
+        </header>
+        <div class="main-row">
+          <div class="scrollbar">
+            {% for link in handler.sitelinks.all %}
+            <p><a href="{{ link.link }}" target="_blank">{{ link.sitename }}</a></p>
+            {% endfor %}
+          </div>
+          <div class="slash">
+            <p>/</p>
+          </div>
+          <div class="nickname">
+            <p>{{ handler.nickname }}</p>
+          </div>
+          <div class="at">
+            @
+          </div>
+          <div class="mail">
+            <p><a href="sergblitzen@gmail.com">{{ handler.mail }}</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

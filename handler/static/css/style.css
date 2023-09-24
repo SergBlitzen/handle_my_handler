@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+.main-box {
+    margin-top: 400px;
+}
+
+.center-header {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.main-row {
+    margin-top: 50px;
+    text-justify: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrollbar {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    margin-top: -2px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar p {
+    font-family: "Nunito Sans", sans-serif;
+    height: 44px;
+    font-size: 34px;
+    text-align: right;
+    margin-left: 10px;
+    margin-top: 30px;
+    scroll-snap-align: center;
+}
+
+.scrollbar p:first-of-type {
+    margin-top: 10px;
+}
+
+.scrollbar p:last-of-type {
+    margin-bottom: 11px;
+}
+
+.scrollbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.slash {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 34px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nickname {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 34px;
+    color: white;
+}
+
+.at {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 34px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mail {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 34px;
+}
+
+.mail a {
+    text-decoration: none;
+    color: white;
+}
