@@ -40,6 +40,6 @@ python manage.py runserver
 * Example page.
 
 
-## DIsclaimer
+## Disclaimer
 All code done by Serg Blitzen.
 <br>Feel free to fork and improve!
